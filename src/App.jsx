@@ -1,34 +1,40 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Home from './components/Home.jsx'
+import About from './components/About Me.jsx'
+import Projects from './components/Projects.jsx'
+import Footer from './components/Footer.jsx'
+import ContactMe from './components/ContactMe.jsx'
+import NavigationBar from './components/Navbar.jsx'
+import SplashCursor from './components/SplashCursor.jsx'
+import Aurora from './components/Aurora.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className='app'>
+      <Aurora
+
+        colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
+
+        blend={0.5}
+
+        amplitude={1.0}
+
+        speed={0.5}
+
+      />
+      <SplashCursor />
+      <NavigationBar />
+      <main>
+        <Home />
+        <About />
+        <Projects />
+      </main>
+  <ContactMe />
+  <Footer />
+    </div>
   )
 }
 

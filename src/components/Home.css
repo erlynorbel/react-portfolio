@@ -1,0 +1,17 @@
+.home-desc {
+  display: block;
+  text-align: center;
+  margin: 2rem auto 0 auto;
+  font-size: 1.5rem;
+}
+
+.splitText-title{
+  font-size: 15vh !important;
+  line-height: 1;
+}
+
+.home-desc {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}

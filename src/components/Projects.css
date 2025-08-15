@@ -1,0 +1,39 @@
+/* Project Card Styles */
+.project-card {
+  background: rgba(0,0,0,0.0) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+.project-card .card-title,
+.project-card .card-text {
+  color: #fff !important;
+}
+.project-card .btn {
+  background: rgba(255,255,255,0.05) !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+  transition: background 0.2s, color 0.2s;
+}
+.project-card .btn:hover {
+  background: #fff !important;
+  color: #222 !important;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.project-card {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
