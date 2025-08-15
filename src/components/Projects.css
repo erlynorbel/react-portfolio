@@ -5,7 +5,9 @@
   border: 1px solid rgba(255,255,255,0.2);
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
 }
-.project-card .card-title,
+.project-card .card-title {
+  color: #fff !important;
+}
 .project-card .card-text {
   color: #fff !important;
 }
@@ -36,4 +38,11 @@
   align-items: center;
   padding: 2rem 1rem;
   box-sizing: border-box;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: white !important;
 }

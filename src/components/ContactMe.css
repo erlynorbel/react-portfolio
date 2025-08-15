@@ -1,0 +1,16 @@
+#contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h2 {
+    color: #000 !important;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold !important;
+}

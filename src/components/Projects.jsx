@@ -26,7 +26,7 @@ const projects = [
 const Projects = () => (
   <section id="portfolio" className="py-5">
     <div className="container">
-      <h2 className="text-center mb-5">My Projects</h2>
+      <h2>My Projects</h2>
       <div className="projects-grid">
         <div className="row">
           {projects.map((project, idx) => (

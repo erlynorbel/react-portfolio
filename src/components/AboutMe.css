@@ -1,0 +1,39 @@
+.about-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10rem;
+}
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.about-img {
+    width: 320px;
+    height: auto;
+    border-radius: 2rem;
+    object-fit: cover;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.about-flex h2 {
+  color: #fff !important;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.about-flex p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+p{
+    text-align: justify;
+    margin-bottom: 1rem;
+    color: rgba(245, 245, 245, 0.519) !important;
+}
