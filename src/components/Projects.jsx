@@ -1,22 +1,25 @@
 import React from "react";
 import GlareHover from "./GlareHover.jsx";
 import './Projects.css';
+import recipenestImg from '../assets/images/recipenest.png';
+import norbeldPortfolioImg from '../assets/images/norbeld-portfolio.png';
+import paddlefrenzyImg from '../assets/images/paddlefrenzy.jpg';
+
 const projects = [
   {
-    img: "/images/recipenest.png",
+    img: recipenestImg,
     title: "RecipeNest",
     desc: "Your AI-powered kitchen companion for smart meal planning and inventory management.",
     modal: "project1Modal",
-      
   },
   {
-    img: "/images/norbeld-portfolio.png",
+    img: norbeldPortfolioImg,
     title: "NorbelD Portfolio",
     desc: "A Portfolio Website with v0.dev with NextJS Framework.",
     modal: "project2Modal",
   },
   {
-    img: "/images/paddlefrenzy.jpg",
+    img: paddlefrenzyImg,
     title: "Paddle Frenzy",
     desc: "JPCS E Week 24-25",
     modal: "project3Modal",
@@ -26,7 +29,7 @@ const projects = [
 const Projects = () => (
   <section id="portfolio" className="py-5">
     <div className="container">
-      <h2>My Projects</h2>
+      <h2 id="project-headline">My Projects</h2>
       <div className="projects-grid">
         <div className="row">
           {projects.map((project, idx) => (

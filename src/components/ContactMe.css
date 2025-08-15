@@ -10,7 +10,7 @@
 
 h2 {
     color: #000 !important;
-    font-size: 4rem;
+    font-size: 4rem !important;
     text-align: center;
     font-weight: bold !important;
 }

@@ -41,7 +41,7 @@ function App() {
         amplitude={1.0}
         speed={0.5}
       />
-      <SplashCursor />
+      {currentSection !== 'contact' && <SplashCursor />}
       <div style={{
         position: 'fixed',
         top: 0,

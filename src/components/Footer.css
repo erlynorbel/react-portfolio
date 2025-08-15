@@ -1,11 +1,10 @@
 /* Footer Styles */
 
 .footer {
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   border-top: 1px solid #eaeaea;
   padding: 1rem 0 0.5rem 0;
   margin-top: 1rem;
-  font-size: 0.95rem;
   width: 100vw;
   left: 50%;
   right: 50%;
@@ -13,11 +12,13 @@
   transform: translateX(-50%);
   box-sizing: border-box;
   text-align: center;
-  color: black !important;
+
 }
+
 .footer .social-links {
   margin-top: 0.3rem;
 }
+
 .footer .social-links a {
   display: inline-block;
   margin: 0 0.3rem;
@@ -25,6 +26,14 @@
   font-size: 1.2rem;
   transition: color 0.2s;
 }
+
 .footer .social-links a:hover {
   color: black;
+}
+
+.FooterText {
+  color: black !important;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }

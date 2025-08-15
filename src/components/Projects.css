@@ -5,11 +5,19 @@
   border: 1px solid rgba(255,255,255,0.2);
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
 }
-.project-card .card-title {
+.project-card .card-title, .projects-grid h2, #portfolio h2 {
   color: #fff !important;
 }
 .project-card .card-text {
   color: #fff !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
+  overflow: hidden;
+  display: block;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
 }
 .project-card .btn {
   background: rgba(255,255,255,0.05) !important;
@@ -22,27 +30,45 @@
   color: #222 !important;
 }
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
 }
 
 .project-card {
-  min-height: 400px;
+  min-height: 480px;
+  max-width: 340px;
+  width: 340px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 1rem;
   box-sizing: border-box;
+  margin: 0;
 }
 
-h2 {
-    font-size: 3rem;
-    text-align: left;
-    margin-bottom: 1rem;
-    color: white !important;
+.project-card .card-img-top {
+  width: 320px !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  border-radius: 1rem;
+  margin: 0 auto 1rem auto;
+  display: block;
+  aspect-ratio: 16/10;
+  background: #222;
+}
+
+#project-headline {
+  font-size: 4rem !important;
+  font-weight: bold !important;
+  color: #fff !important;
+  margin-bottom: 2rem;
+  text-align: left;
 }
